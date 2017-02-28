@@ -3,5 +3,25 @@ body {
 }
 
 p {
-    color: black;
+    color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.blocktop {
+  height: 300px;
+  width: auto;
+}
+
+.social-btn__twitter {
+  background: url('img/twitter-logo-button.png');
+
+}
+
+.mdl-cell--4-col
+{
+
+
 }

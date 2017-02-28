@@ -8,12 +8,22 @@
 </head>
 <body>
 
-<h1>Development Mode</h1>
-<p>Testing using Material Design.</p>
 <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../assets/demos/welcome_card.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
 .demo-layout-transparent {
-  background: url('img/a.jpg') center / cover;
+  /*background: url('img/a.jpg') center / cover;*/
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
@@ -21,15 +31,32 @@
      your background is light. */
   color: white;
 }
+
+body {
+  background: url('img/bg.jpeg') center / cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 </style>
 
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
+
+
+
+
+
+
       <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title">Jose Salazar</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
+
+
+
+
+
       <!-- Navigation -->
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
@@ -40,7 +67,7 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title">Menu</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="">Link</a>
       <a class="mdl-navigation__link" href="">Link</a>
@@ -50,7 +77,66 @@
   </div>
   <main class="mdl-layout__content">
   </main>
+      <button class = "mdl-mini-footer--social-btn social-btn social-btn__twitter">
+        <img src="img/twitter-logo-button.png"></button>
 </div>
+
+
+<div class ="blocktop"></div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-col"></div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <span class="content_1">
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Card Test 1
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+  </span></div>
+  <div class="mdl-cell mdl-cell--2-col">
+    <span class="content_2">
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Card Test 2
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Click Me!
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+  </span></div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
 
 </body>
 <footer>
