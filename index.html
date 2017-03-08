@@ -1,62 +1,36 @@
-<DOCTYPE! HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-
-.demo-card-wide.mdl-card {
-  width: 512px;
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-.demo-layout-transparent {
-  /*background: url('img/a.jpg') center / cover;*/
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
-
-body {
-  background: url('img/bg.jpeg') center / cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-</style>
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+<!-- Beginning section for navigation and header -->
+<div class="cust-layout-transparent mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--transparent">
+    <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
-
-
-
-
-
-
       <!-- Title -->
-      <span class="mdl-layout-title">Jose Salazar</span>
-      <!-- Add spacer, to align navigation to the right -->
+      <span class="mdl-layout-title">Chema Salazar</span>
       <div class="mdl-layout-spacer"></div>
-
-
-
-
-
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="waterfall-exp">
+        </div>
+      </div>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Blog</a>
@@ -67,7 +41,7 @@ body {
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
+    <span class="mdl-layout-title">Chema Salazar</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="">Blog</a>
       <a class="mdl-navigation__link" href="">Projects</a>
@@ -76,66 +50,10 @@ body {
     </nav>
   </div>
   <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
   </main>
-      <!-- Social icons will be added in this section.-->
 </div>
-
-
-<div class ="blocktop"></div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--2-col"></div>
-  <div class="mdl-cell mdl-cell--4-col">
-    <span class="content_1">
-      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Card Test 1
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
-</div>
-  </span></div>
-  <div class="mdl-cell mdl-cell--2-col">
-    <span class="content_2">
-      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Card Test 2
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Click Me!
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
-</div>
-  </span></div>
-
-
-
-
-
-  </div>
-</div>
-
-
-
+<!-- End section for navigation and header -->
 
 </body>
 <footer>

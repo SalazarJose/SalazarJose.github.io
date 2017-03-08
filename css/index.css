@@ -1,13 +1,14 @@
 body {
     background-color: white;
+    color: black;
 }
 
 p {
-    color: white;
+    color: black;
 }
 
 h1 {
-  color: white;
+  color: black;
 }
 
 .blocktop {
@@ -23,5 +24,32 @@ h1 {
 .mdl-cell--4-col
 {
 
+
+}
+.cust-layout-transparent .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+    padding-right: 0;
+}
+
+.cust-layout-transparent {
+    background: url('../img/viewbg.jpeg') center / cover;
+}
+
+
+.mdl-layout__header-row{
+    color:black;
+}
+
+.mdl-navigation__link{
+    color:black;
+}
+.mdl-layout__header-row .mdl-navigation__link {
+    display: block;
+    color: black !important;
+    line-height: 64px;
+    padding: 0 24px;
+}
+
+.mdl-layout__drawer-button {
+    color: black !important;
 
 }
