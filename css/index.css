@@ -17,7 +17,7 @@ h1 {
 }
 
 .social-btn__twitter {
-  background: url('img/twitter-logo-button.png');
+
 
 }
 
@@ -52,4 +52,10 @@ h1 {
 .mdl-layout__drawer-button {
     color: black !important;
 
+}
+
+.mdl-card {
+    width:400px !important;
+    /*display: inline-block;*/
+    margin-left: auto;
 }
